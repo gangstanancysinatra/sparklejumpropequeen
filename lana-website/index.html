@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Del Rey - Radio Edits</title>
+    <!-- Google Fonts (like they used) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html" class="active">Music</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <h1>LANA DEL REY</h1>
+                <h2>RADIO EDITS</h2>
+            </header>
+
+            <div class="album-info">
+                <h3>Radio Edits</h3>
+                <h4>Born to Die</h4>
+                <p class="song-count">11 Songs, 42 min 49 sec</p>
+            </div>
+
+            <!-- Music Player Section -->
+            <div class="player-section">
+                <!-- Current playing bar -->
+                <div class="now-playing">
+                    <span id="current-time">0:00</span>
+                    <span id="total-time">0:00</span>
+                </div>
+                
+                <!-- Playlist -->
+                <ul class="playlist" id="playlist">
+                    <!-- Songs will be loaded here by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Download All Button (uses JSZip) -->
+            <button id="download-all" class="download-btn">⬇️ Download All as ZIP</button>
+        </main>
+    </div>
+
+    <!-- JavaScript Libraries (exactly what they used) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
